@@ -1,0 +1,130 @@
+/* Navbar.css */
+
+:root {
+  --primary-color: #6A1B9A;
+  --hover-color: #4A148C;
+  --text-color: #333;
+  --background-color: #f8f9fa; /* Softer background color */
+  --button-color: #a0522d; /* Softer button color */
+  --button-hover-color: #8b4513; /* Warmer hover color */
+}
+
+.navbar {
+  background-color: var(--background-color);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  border-radius: 10px; /* Rounded corners for the navbar */
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Lift effect on hover */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 50px; /* Increased logo size */
+  margin-right: 0.75rem; /* Adjusted spacing */
+}
+
+.navbar-brand {
+  font-size: 2rem; /* Slightly larger font size */
+  font-weight: bold;
+  color: var(--primary-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow for the brand */
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: var(--hover-color);
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin: 0 1.5rem; /* Increased spacing for a cleaner look */
+  font-size: 1.1rem; /* Slightly larger font size */
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500; /* Slightly bolder text for better readability */
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-menu a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--hover-color);
+  left: 0;
+  bottom: -3px;
+  transition: width 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: var(--primary-color);
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+.navbar-menu a:hover::after {
+  width: 100%;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-user-name {
+  margin-right: 1rem;
+  font-size: 1.1rem; /* Slightly larger font size */
+  color: var(--text-color);
+  font-weight: 600; /* Slightly bolder text */
+}
+
+.navbar-login,
+.navbar-logout {
+  display: flex;
+  align-items: center;
+  background-color: var(--button-color);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem; /* Increased padding for a more substantial look */
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.1rem; /* Slightly larger font size */
+  border-radius: 30px; /* Fully rounded corners for buttons */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for buttons */
+}
+
+.navbar-login:hover,
+.navbar-logout:hover {
+  background-color: var(--button-hover-color);
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.navbar-login-icon {
+  margin-right: 0.5rem;
+}

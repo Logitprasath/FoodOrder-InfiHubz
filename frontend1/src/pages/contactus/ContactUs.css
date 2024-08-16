@@ -1,0 +1,101 @@
+.contact-us {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-us-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .contact-us-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-us-header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .contact-us-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-us-details {
+    text-align: center;
+  }
+  
+  .contact-us-details h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-us-details p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .contact-us-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-us-form h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    height: 150px;
+  }
+  
+  .message {
+    background-color:black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .message:hover {
+    background-color: gray;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+  }
+  

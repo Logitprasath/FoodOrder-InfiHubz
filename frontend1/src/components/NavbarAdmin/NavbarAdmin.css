@@ -1,0 +1,56 @@
+.anavbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* Background color for the navbar */
+    border-bottom: 1px solid #ddd; /* Optional: Bottom border for separation */
+    padding: 1rem;
+  }
+  
+  .anavbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo {
+    height: 50px; /* Adjust height as needed */
+  }
+  
+  .anavbar-logo h1 {
+    font-size: 1.5rem;
+    color: black; /* Brand color */
+  }
+  
+  .anavbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .aprofile {
+    height: 40px; /* Adjust height as needed */
+    border-radius: 50%;
+  }
+  
+  .alogout {
+    background-color: #6A1B9A;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .alogout:hover {
+    background-color: #4A148C;
+  }
+  
+  .logout-icon {
+    font-size: 1rem; /* Adjust size as needed */
+  }
+  

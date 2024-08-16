@@ -1,0 +1,133 @@
+/* Add.css */
+
+.add-container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - var(--sidebar-width));
+    margin-left: var(--sidebar-width);
+    padding: 40px; /* Increased padding for more whitespace */
+    box-sizing: border-box;
+    align-items: flex-start;
+    background-color: #f8f9fa; /* Subtle background color */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.admin-content {
+    display: flex;
+}
+
+.add {
+    width: 100%;
+    color: #333; /* Darker color for better readability */
+    font-size: 16px;
+    margin-bottom: 20px; /* Space below for separation */
+}
+
+.add form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-img-upload {
+    display: flex;
+    flex-direction: column; /* Changed to column layout for better alignment */
+    align-items: center;
+    justify-content: center; /* Center the label */
+    width: 100%; /* Full width to align with form */
+    margin-bottom: 20px; /* Space between image upload and other elements */
+}
+
+.add-img-upload label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border: 2px dashed #007bff; /* Dashed border for a professional look */
+    border-radius: 8px;
+    color: black;
+    font-size: 40px; /* Adjusted font size for icon */
+    cursor: pointer;
+    background-color: #ffffff; /* Background color */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.add-img-upload label:hover {
+    background-color: #f0f0f0;
+    border-color: #0056b3; /* Darker blue on hover */
+}
+
+.add-img-upload input[type="file"] {
+    display: none; /* Hide the file input */
+}
+
+.add-img-upload img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Light border around the image */
+    padding: 8px;
+    display: none; /* Hide the image initially */
+}
+
+.add-img-upload img.preview-visible {
+    display: block; /* Show the image when it's selected */
+}
+
+.add-product-name,
+.add-product-description {
+    padding: 10px 0;
+    width: 100%;
+}
+
+.add-product-name input,
+.add-product-description textarea {
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc; /* Light border for input and textarea */
+    font-size: 16px;
+    background-color: #fff; /* White background for input fields */
+    box-sizing: border-box;
+}
+
+.add-category-price {
+    display: flex;
+    gap: 20px; /* Reduced gap for a tighter layout */
+    flex-wrap: wrap;
+}
+
+.add-category-price select,
+.add-category-price input {
+    flex: 1;
+    min-width: 120px;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc; /* Light border */
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.add-btn {
+    max-width: 150px;
+    border: none;
+    padding: 12px;
+    margin-top: 30px;
+    background-color: black; /* Blue background for the button */
+    color: white;
+    cursor: pointer;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.add-btn:hover {
+    background-color: rgb(30, 17, 17);
+}
+
+label img[src*="assets/upload_area"] {
+    filter: grayscale(100%);
+}

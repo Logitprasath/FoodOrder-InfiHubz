@@ -1,0 +1,62 @@
+/* Sidebar.css */
+
+.sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #000000, #1c1c1c); /* Gradient background from black to dark gray */
+  height: 100vh; /* Use full viewport height */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
+  border-right: 1px solid #1c1c1c; /* Dark border for separation */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+  border: 2px solid #1c1c1c; /* Border around the sidebar */
+}
+
+.sidebar-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Consistent spacing between items */
+  flex-grow: 1; /* Allow the options to take up available space */
+  border: 1px solid #1c1c1c; /* Border around the options container */
+  border-radius: 8px; /* Rounded corners for a modern touch */
+  padding: 10px; /* Padding inside the options container */
+  background-color: #000000; /* Black background for the options container */
+}
+
+.sidebar-option {
+  display: flex;
+  align-items: center;
+  color: #ecf0f1; /* Light color for text */
+  text-decoration: none;
+  padding: 12px 20px; /* Increased padding for a more spacious feel */
+  border-radius: 8px; /* Rounded corners for a modern touch */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  font-size: 16px;
+  cursor: pointer; /* Pointer cursor for clickable items */
+  border: 1px solid #1c1c1c; /* Border around each option */
+  background-color: #000000; /* Black background for each option */
+}
+
+.sidebar-option:hover {
+  background-color: #333333; /* Slightly lighter black for hover effect */
+  color: #ffffff; /* White text on hover */
+  transform: scale(1.03); /* Slightly enlarge the option on hover */
+}
+
+.sidebar-option p {
+  margin-left: 12px; /* Margin for text alignment */
+  font-size: 16px;
+  font-weight: 500; /* Semi-bold text for emphasis */
+  line-height: 1.5; /* Improved line height for readability */
+}
+
+.sidebar-option svg {
+  font-size: 20px; /* Icon size */
+  color: #ecf0f1; /* Light color for icons */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.sidebar-option:hover svg {
+  color: #ffffff; /* Change icon color to white on hover */
+}
